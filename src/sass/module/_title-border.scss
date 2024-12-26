@@ -1,0 +1,7 @@
+@use "global" as *;
+.title-border{
+border-left:5px solid gray;
+}
+.title-border h2{
+  margin-left: rem(8);
+}

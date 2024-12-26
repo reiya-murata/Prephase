@@ -1,0 +1,21 @@
+@use "global" as *;
+.nav-pc__items {
+  display: flex;
+  gap: rem(16);
+  text-align: center;
+  align-items: center;
+}
+
+.nav-pc__item-title {
+  color: white;
+  font-weight: $bold;
+  font-size: rem(24);
+  text-shadow: 1px 1px #3333335b;
+}
+
+.nav-pc__item-subtitle {
+  color: white;
+  font-weight: $bold;
+  font-size: rem(16);
+  text-shadow: 1px 1px #3333335b;
+}

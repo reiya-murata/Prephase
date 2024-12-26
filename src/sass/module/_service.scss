@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.service{
+  position: relative;
+}
+.service__inner{
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: initial;
+  }
+}
+
+.service__right-title{
+  font-size: rem(24);
+}
+
+.service__right-text{
+  margin-top: rem(32);
+  font-size: rem(16);
+}
