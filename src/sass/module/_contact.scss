@@ -1,0 +1,62 @@
+@use "global" as *;
+.contact{
+  position: relative;
+}
+.contact__inner{
+  text-align: center;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: center;
+}
+.contact__title h2{
+  font-family: "Josefin Sans", serif;
+  font-size: rem(24);
+  color: #393C53;
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+.contact__name{
+  display: flex;
+  justify-content: center;
+  
+}
+.contact__name input{
+  width: rem(150);
+  @include mq(md) {
+    width: rem(200);
+  }
+}
+.contact__name-left{
+  margin-right: rem(16);
+}
+input{
+  border: 1px solid #393C53;
+  padding-left: rem(8);
+  width: rem(316);
+  margin-bottom: rem(16);
+  @include mq(md) {
+    width: rem(416);
+  }
+}
+
+form p{
+  font-family: "Josefin Sans", serif;
+}
+::placeholder{
+  color: #0000002a;
+}
+.required::before{
+content: "*";
+position: relative;
+color: red;
+}
+textarea{
+  
+  border: 1px solid #393C53;
+  width: rem(316);
+  margin-bottom: rem(16);
+  @include mq(md) {
+    width: rem(416);
+  }
+}

@@ -1,21 +1,42 @@
 @use "global" as *;
 
-.service{
+.service {
   position: relative;
 }
-.service__inner{
+
+.service__inner {
   display: flex;
   flex-direction: column;
+
   @include mq(md) {
     flex-direction: initial;
   }
 }
-
-.service__right-title{
+.service__left{
+  @include mq(md) {
+    width: 50%;
+  }
+}
+.service__left-title {
   font-size: rem(24);
+  color: #393C53;
 }
 
-.service__right-text{
+.service__left-text {
+  color: #393C53;
   margin-top: rem(32);
   font-size: rem(16);
+}
+
+.service__right {
+  @include mq(md) {
+    margin-top: rem(40);
+    margin-left: rem(80);
+    width: 50%;
+  }
+}
+.service__right img{
+  @include mq(md) {
+    width: rem(500);
+  }
 }

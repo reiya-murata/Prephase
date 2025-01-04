@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.submit {
+  border: 1px solid #333;
+  color: #393C53;
+  font-family: "Josefin Sans", serif;
+  font-size: rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  background-color: silver;
+}
+
+.submit:hover {
+  opacity: 0.3;
+}
