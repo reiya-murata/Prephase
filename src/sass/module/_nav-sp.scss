@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.nav-sp__items {
+  display: none;
+  font-family: "Josefin Sans", serif;
+  font-size: rem(16);
+  font-weight: $bold;
+  text-shadow: 2px 2px 2px white;
+  gap: rem(16);
+  text-align: center;
+  align-items: center;
+  @include mq(md) {
+  }
+}
+
+.nav-sp__items .active{
+  display: block;
+}

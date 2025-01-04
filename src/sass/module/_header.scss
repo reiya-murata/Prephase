@@ -3,12 +3,15 @@
 .header {
   position: fixed;
   background-color: #3333335b;
-  height: rem(80);
+  height: rem(60);
   display: flex;
-
   justify-content: space-between;
   width: 100vw;
   z-index: 15;
+  @include mq(md) {
+    height: rem(80);
+  }
+
 }
 
 .header__inner {

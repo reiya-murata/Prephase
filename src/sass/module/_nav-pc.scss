@@ -1,13 +1,27 @@
 @use "global" as *;
+
 .nav-pc__items {
-  display: flex;
+  font-family: "Josefin Sans", serif;
+  font-size: rem(16);
+  font-weight: $bold;
+  text-shadow: 2px 2px 2px white;
+  display: none;
   gap: rem(16);
   text-align: center;
   align-items: center;
+  @include mq(md) {
+    display: flex;
+
+  }
 }
-.nav-pc__items :hover{
-opacity: 0.6;
-transition: 0.5ms;
+
+.nav-pc__items :hover {
+  opacity: 0.6;
+  transition: 0.5ms;
+}
+
+.nav-pc__items a {
+  display: block;
 }
 
 .nav-pc__item-title {
