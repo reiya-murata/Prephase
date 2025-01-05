@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.service-page-2__inner {
+  position: relative;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(24);
+  }
+}
+
+.service-page-2__left {
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.service-page-2__left img {
+  margin-top: rem(16);
+}
+
+.service-page-2__title h2 {
+  color: #0329c2;
+}
+
+.service-page-2__text {
+  margin-top: rem(16);
+}
+
+.service-page-2__right {
+  @include mq(md) {
+    width: 50%;
+  }
+}

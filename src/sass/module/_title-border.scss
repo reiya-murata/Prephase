@@ -6,4 +6,8 @@ border-left:5px solid gray;
   font-family: "Josefin Sans", serif;
   margin-left: rem(8);
   color: #393C53;
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
